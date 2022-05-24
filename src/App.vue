@@ -158,9 +158,9 @@ export default {
     format(){
       const REGEX= new RegExp('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$', 'i');
       this.errors = [""]
-      this.to && (REGEX.test(this.to) ? "" : this.errors.push("'To' mailadress might be invalid!"));
-      this.cc && (REGEX.test(this.cc) ? "" : this.errors.push("'CC' mailadress might be invalid!"));
-      this.bcc && (REGEX.test(this.bcc) ? "" : this.errors.push("'BCC' mailadress might be invalid!"));
+      this.to && (REGEX.test(this.to) ? "" : this.errors.push("'To' mailaddress might be invalid!"));
+      this.cc && (REGEX.test(this.cc) ? "" : this.errors.push("'CC' mailaddress might be invalid!"));
+      this.bcc && (REGEX.test(this.bcc) ? "" : this.errors.push("'BCC' mailaddress might be invalid!"));
       this.formated = `mailto:${this.to}${(this.cc || this.bcc || this.subject || this.body) ? "?" : ""}${this.cc ? "cc="+encodeURIComponent(this.cc) : this.cc && "cc="+encodeURIComponent(this.cc)}${this.cc && this.bcc ? "&bcc="+encodeURIComponent(this.bcc) : this.bcc && "bcc="+encodeURIComponent(this.bcc)}${(this.cc || this.bcc) && this.subject ? "&subject="+encodeURIComponent(this.subject) : this.subject && "subject="+encodeURIComponent(this.subject)}${(this.cc || this.bcc || this.subject) && this.body ? "&body="+encodeURIComponent(this.body) : this.body && "body="+encodeURIComponent(this.body)}`
       return this.formated;
     }
