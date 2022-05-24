@@ -27,11 +27,11 @@
         <div class="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1 lg:col-span-2">
           <div class="-mt-4 absolute tracking-wider px-1 uppercase text-xs">
             <p>
-              <label for="to" class="bg-white text-gray-600 px-1">To (Empfänger)</label>
+              <label for="to" class="bg-white text-gray-600 px-1">To</label>
             </p>
           </div>
           <p>
-            <input @keyup="format()" v-model="to" placeholder="example@mail.com" id="to" autocomplete="true" tabindex="0" type="email" class="py-1 px-1 text-gray-900 outline-none block h-full w-full">
+            <input @keyup="format()" v-model="to" placeholder="mail@example.com" id="to" autocomplete="true" tabindex="0" type="email" class="py-1 px-1 text-gray-900 outline-none block h-full w-full">
           </p>
         </div>
         <div class="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -41,7 +41,7 @@
             </p>
           </div>
           <p>
-            <input @keyup="format()" v-model="cc" placeholder="example@mail.com" id="cc" autocomplete="false" tabindex="0" type="mail" class="py-1 px-1 outline-none block h-full w-full">
+            <input @keyup="format()" v-model="cc" placeholder="mail@example.com" id="cc" autocomplete="false" tabindex="0" type="mail" class="py-1 px-1 outline-none block h-full w-full">
           </p>
         </div>
         <div class="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1">
@@ -51,13 +51,13 @@
             </p>
           </div>
           <p>
-            <input @keyup="format()" v-model="bcc" placeholder="example@mail.com" id="bcc" autocomplete="false" tabindex="0" type="mail" class="py-1 px-1 outline-none block h-full w-full">
+            <input @keyup="format()" v-model="bcc" placeholder="mail@example.com" id="bcc" autocomplete="false" tabindex="0" type="mail" class="py-1 px-1 outline-none block h-full w-full">
           </p>
         </div>
         <div class="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1 lg:col-span-2">
           <div class="-mt-4 absolute tracking-wider px-1 uppercase text-xs">
             <p>
-              <label for="subject" class="bg-white text-gray-600 px-1">Subject (Betreff)</label>
+              <label for="subject" class="bg-white text-gray-600 px-1">Subject</label>
             </p>
           </div>
           <p>
@@ -71,7 +71,7 @@
             </p>
           </div>
           <p>
-            <textarea @keyup="format()" v-model="body" placeholder="Dear Max Smith, ..." id="body" autocomplete="false" tabindex="0" type="textarea" class="py-1 px-1 outline-none block h-full w-full"></textarea >
+            <textarea @keyup="format()" v-model="body" placeholder="Dear Jane Doe, ..." id="body" autocomplete="false" tabindex="0" type="textarea" class="py-1 px-1 outline-none block h-full w-full"></textarea >
           </p>
         </div>
         <div class="border focus-within:border-blue-500 focus-within:text-blue-500 transition-all duration-500 relative rounded p-1 lg:col-span-2">
