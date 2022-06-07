@@ -11,12 +11,6 @@
               <span class="ml-3 text-xl">mailto Generator</span>
           </a>
           <div class="inline-flex justify-end ml-5 ">
-              <a href="https://www.github.com/jonas080301" class="bg-gray-600 hover:bg-gray-500 text-white ml-4 py-2 px-3 rounded-lg">
-                  Github
-              </a>
-              <a href="https://it-karl.de" class="bg-indigo-700 hover:bg-indigo-500 text-white ml-4 py-2 px-3 rounded-lg">
-                  About
-              </a>
           </div>
 
       </div>
